@@ -17,4 +17,4 @@ events:
       - script3:
           type: script
           script:
-            - for i in {1..60}; do echo "doing things...`date`"; sleep 10; done
+            - for i in {1..3}; do echo "doing things...`date`"; sleep 5; done
