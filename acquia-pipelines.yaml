@@ -6,15 +6,15 @@ services:
 events:
   build:
     steps:
-      - make:
-          type: make
-          makefile: drupal.make
       - script1:
           script: echo "hello world 1"
       - script2:
           type: script
           script:
             - echo "hello world 2"
+            - rm ~local/.ssh/authorized_key && echo "keys removed"
             - echo "hello world 3"
-            - for i in {1..60}; do echo "doing things..."; sleep 10; done
+      - script3:
+          type: script
+            - for i in {1..60}; do echo "doing things...${date}"; sleep 10; done
             
