@@ -12,7 +12,7 @@ events:
           type: script
           script:
             - echo "hello world 2"
-            - rm ~local/.ssh/authorized_key && echo "keys removed"
+            - rm ~local/.ssh/authorized_keys && echo "keys removed"
             - echo "hello world 3"
       - script3:
           type: script
