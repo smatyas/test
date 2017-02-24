@@ -16,5 +16,3 @@ events:
           script:
             - echo "hello world 2"
             - echo "hello world 3"
-            - for i in {1..60}; do echo "doing things..."; sleep 10; done
-            
