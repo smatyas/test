@@ -1,0 +1,18 @@
+version: 1.0.0
+
+services:
+  - mysql
+
+events:
+  build:
+    steps:
+      - make:
+          type: make
+          makefile: drupal.make
+      - script1:
+          script: echo "hello world 1"
+      - script2:
+          type: script
+          script:
+            - echo "hello world 2"
+            - echo "hello world 6"
