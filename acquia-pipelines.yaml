@@ -6,9 +6,6 @@ services:
 events:
   build:
     steps:
-      - make:
-          type: make
-          makefile: drupal.make
       - script1:
           script: echo "hello world 1"
       - script2:
