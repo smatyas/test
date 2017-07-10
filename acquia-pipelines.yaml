@@ -1,0 +1,7 @@
+version: 1.0.0
+
+events:
+  build:
+    steps:
+      - script1:
+          script: php -v
